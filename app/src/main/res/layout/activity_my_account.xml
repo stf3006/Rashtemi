@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="60dp"
             android:paddingLeft="80dp"
-            android:text="LOGIN PAGE"
+            android:text="@string/loginTitle_text"
             android:textSize="30dp"
             android:textStyle="bold" />
 
@@ -42,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username1_text"
-                android:paddingRight="10dp" />
+                android:paddingRight="10dp"
+                android:id="@+id/username_login_et"/>
 
         </LinearLayout>
 
@@ -62,7 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password1_text"
-                android:paddingRight="10dp" />
+                android:paddingRight="10dp"
+                android:id="@+id/password_login_et"/>
 
         </LinearLayout>
 

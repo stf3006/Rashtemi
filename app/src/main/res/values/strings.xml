@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RashtemiRestaurant</string>
+    <string name="app_name">Rashtemi Restaurant</string>
     <string name="menu_button_txt">View Menu</string>
     <string name="contact_button_txt">Contact</string>
     <string name="order_button_txt">Order</string>
@@ -12,4 +12,13 @@
     <string name="username1_text">Username</string>
     <string name="password_text">Password:</string>
     <string name="password1_text">Password</string>
+    <string name="usernameNou_text">Username:</string>
+    <string name="loginTitle_text">LOGIN PAGE</string>
+    <string name="signupTitle_text">SIGN UP PAGE</string>
+    <string name="confirmPassword_text">Confirm:</string>
+    <string name="signup_button2_text">Create New Account</string>
+    <string name="name_text">Name:</string>
+    <string name="name1_text">Name</string>
+    <string name="telephone_text">Phone:</string>
+    <string name="telephone1_text">Phone</string>
 </resources>

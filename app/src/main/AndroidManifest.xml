@@ -18,11 +18,12 @@
         </activity>
         <activity
             android:name=".ContactActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MyAccountActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".MyAccountActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
+        <activity android:name=".SignUpActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>
