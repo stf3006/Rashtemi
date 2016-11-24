@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -31,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        Button bookTableBtn = (Button)findViewById(R.id.book_button);
+        bookTableBtn.setOnClickListener(new View.OnClickListener() { // TRECEREA DE LA O ACTIVITATE LA ALTA PRIN BUTON
+            @Override
+            public void onClick(View v) {
+                DatabaseHelper dbh = new DatabaseHelper(MainActivity.this);
+                ArrayList<String> lst = dbh.getAllCategories();
+                System.out.println("AM GASIT " + lst.size() + " CATEGORII!");
+            }
+        });
     }
 
 
