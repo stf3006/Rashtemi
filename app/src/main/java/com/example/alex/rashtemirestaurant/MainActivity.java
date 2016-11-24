@@ -31,8 +31,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
+        Button menuBtn = (Button)findViewById(R.id.menu_button);
+        menuBtn.setOnClickListener(new View.OnClickListener() { // TRECEREA DE LA O ACTIVITATE LA ALTA PRIN BUTON
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intent1);
+            }
+        });
+        Button bookBtn = (Button)findViewById(R.id.book_button);
+        bookBtn.setOnClickListener(new View.OnClickListener() { // TRECEREA DE LA O ACTIVITATE LA ALTA PRIN BUTON
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, BookActivity.class);
+                startActivity(intent1);
+            }
+        });
 
     }
 

@@ -21,4 +21,18 @@
     <string name="name1_text">Name</string>
     <string name="telephone_text">Phone:</string>
     <string name="telephone1_text">Phone</string>
+    <string name="Name_book_text">Name:</string>
+    <string name="Book_a_table_text">Book A Table</string>
+    <string name="name_book_et">Name</string>
+    <string name="book_phone_text">Phone:</string>
+    <string name="book_phone_et">07********</string>
+    <string name="Number_book_text">No. of guests</string>
+    
+    <string-array name="number_of_guests">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

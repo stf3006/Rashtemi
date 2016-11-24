@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="name_book_et" type="id">name_book_et</item>
+    <item name="phone_book_et" type="id">phone_book_et</item>
+    <item name="guests_spinner" type="id">guests_spinner</item>
+</resources>
