@@ -99,14 +99,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public ArrayList<String> getAllCategories() {
-        ArrayList<String> categories = new ArrayList<>();
+    public ArrayList<Category> getAllCategories() {
+        ArrayList<Category> categories = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_CATEGORIES, null);
         cursor.moveToFirst();
 
         while(cursor.isAfterLast() == false) {
-            categories.add(cursor.getString(1));
+            categories.add(new Category(cursor.getString(1), cursor.getInt(0)));
             cursor.moveToNext();
         }
 
