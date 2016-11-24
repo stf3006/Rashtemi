@@ -84,6 +84,48 @@
                 android:textSize="25dp" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_date"
+                android:onClick="showDatePickerDialog"
+                android:textSize="25dp"
+                android:layout_marginLeft="-7dp"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pick_date_id"
+                android:hint="@string/picked_date_text"
+                android:textSize="25dp"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="@string/Pick_time_text"
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@id/hour_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/book_phone_et"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>

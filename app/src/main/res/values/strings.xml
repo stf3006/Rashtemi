@@ -27,12 +27,30 @@
     <string name="book_phone_text">Phone:</string>
     <string name="book_phone_et">07********</string>
     <string name="Number_book_text">No. of guests</string>
-    
+    <string name="pick_date">Pick Date</string>
+    <string name="picked_date_text">Pick Date</string>
+    <string name="Pick_time_text">Pick time</string>
+
     <string-array name="number_of_guests">
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
+    </string-array>
+
+    <string-array name="hour_schedule">
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
     </string-array>
 </resources>
