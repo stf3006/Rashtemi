@@ -1,5 +1,6 @@
 package com.example.alex.rashtemirestaurant;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,8 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        getSupportActionBar().setTitle("MENU");
+
         DatabaseHelper dbh = new DatabaseHelper(this);
         ArrayList<Category> categories = dbh.getAllCategories();
 
@@ -31,9 +34,17 @@ public class MenuActivity extends AppCompatActivity {
                                               public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                                   Category categSelectata = categoriesAdapter.getItem(position);
                                                   System.out.println(categSelectata.id);
+
+                                                  Intent intent = new Intent(MenuActivity.this, ProductsActivity.class);
+                                                  intent.putExtra("CATEGORY_ID", categSelectata.id);
+                                                  intent.putExtra("CATEGORY_NAME", categSelectata.name);
+                                                  startActivity(intent);
                                               }
                                           }
-
         );
+    }
+
+    public void ShowBasket(View v) {
+        System.out.println("SHOWING BASKET");
     }
 }

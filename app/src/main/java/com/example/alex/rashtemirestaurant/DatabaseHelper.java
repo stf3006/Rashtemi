@@ -112,4 +112,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return categories;
     }
+
+    public ArrayList<Product> getAllProductsByCategoryId(int categoryId) {
+        ArrayList<Product> products = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_MENU + " WHERE category=" + categoryId, null);
+        cursor.moveToFirst();
+
+        while(cursor.isAfterLast() == false) {
+            products.add(new Product(cursor.getInt(0), cursor.getString(1), cursor.getInt(2), cursor.getInt(3), cursor.getInt(4)));
+            cursor.moveToNext();
+        }
+
+        return products;
+    }
 }

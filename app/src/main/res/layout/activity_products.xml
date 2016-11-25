@@ -8,14 +8,14 @@
     android:layout_height="match_parent">
 
     <ListView
-        android:id="@+id/menu_listview"
+        android:id="@+id/products_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.example.alex.rashtemirestaurant.MenuActivity" />
+        tools:context="com.example.alex.rashtemirestaurant.ProductsActivity" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/menu_basket_button"
@@ -24,7 +24,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:src="@drawable/ic_basket"
-        app:layout_anchor="@id/menu_listview"
+        app:layout_anchor="@id/products_lv"
         app:layout_anchorGravity="bottom|right|end"
         android:onClick="ShowBasket"/>
 

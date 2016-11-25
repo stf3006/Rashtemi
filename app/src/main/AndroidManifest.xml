@@ -27,10 +27,13 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".MenuActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".BookActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ProductsActivity"
+            android:theme="@style/Theme.AppCompat" />
     </application>
 
 </manifest>
