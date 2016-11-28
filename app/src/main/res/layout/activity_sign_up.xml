@@ -110,7 +110,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password1_text"
                 android:id="@+id/password_signup_et"
-                android:paddingRight="10dp" />
+                android:paddingRight="10dp"
+                android:inputType="textPassword"/>
 
         </LinearLayout>
 
@@ -131,7 +132,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password1_text"
                 android:id="@+id/confirmPassword_et"
-                android:paddingRight="10dp" />
+                android:paddingRight="10dp"
+                android:inputType="textPassword"/>
 
         </LinearLayout>
 

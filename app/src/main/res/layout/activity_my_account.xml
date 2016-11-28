@@ -64,7 +64,8 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password1_text"
                 android:paddingRight="10dp"
-                android:id="@+id/password_login_et"/>
+                android:id="@+id/password_login_et"
+                android:inputType="textPassword"/>
 
         </LinearLayout>
 
