@@ -1,5 +1,6 @@
 package com.example.alex.rashtemirestaurant;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +31,8 @@ public class ProductsActivity extends AppCompatActivity {
     }
 
     public void ShowBasket(View v) {
-        System.out.println("SHOWING BASKET");
+        Intent intent = new Intent(ProductsActivity.this, CartActivity.class);
+        startActivity(intent);
     }
 
 }

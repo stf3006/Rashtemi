@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -45,6 +46,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void ShowBasket(View v) {
-        System.out.println("SHOWING BASKET");
+
+                Intent intent = new Intent(MenuActivity.this, CartActivity.class);
+                startActivity(intent);
     }
 }
