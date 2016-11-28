@@ -24,7 +24,7 @@ public class ProductsActivity extends AppCompatActivity {
         ArrayList<Product> products = dbh.getAllProductsByCategoryId(categoryId);
 
         ListView productsListView = (ListView) findViewById(R.id.products_lv);
-        ArrayAdapter<Product> productsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, products);
+        ProductsListAdapter productsAdapter = new ProductsListAdapter(getApplicationContext(), R.layout.product_item_template, products);
 
         productsListView.setAdapter(productsAdapter);
     }
@@ -32,4 +32,5 @@ public class ProductsActivity extends AppCompatActivity {
     public void ShowBasket(View v) {
         System.out.println("SHOWING BASKET");
     }
+
 }
