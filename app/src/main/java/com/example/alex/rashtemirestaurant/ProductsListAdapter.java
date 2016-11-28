@@ -42,7 +42,9 @@ public class ProductsListAdapter extends ArrayAdapter<Product> {
         productAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CartHelper.addProduct(product);
                 System.out.println("ADAUG IN COS " + product.name);
+
             }
         });
 
