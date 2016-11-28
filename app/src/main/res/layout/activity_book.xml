@@ -125,6 +125,13 @@
                 android:textSize="25dp" />
 
         </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBooking_button"
+            android:text="@string/addBooking_button"
+            android:textSize="25dp"
+            />
 
 
     </LinearLayout>
