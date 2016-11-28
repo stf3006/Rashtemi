@@ -43,7 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Side dishes\")"); // 4
         db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Sandwiches\")"); // 5
         db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Pasta\")"); // 6
-        db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Deserts\")"); // 7
+        db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Desserts\")"); // 7
         db.execSQL("INSERT INTO " + TABLE_CATEGORIES + " (category) VALUES (\"Beverages\")"); // 8
 
         // CREATE MENU TABLE
@@ -68,15 +68,90 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "(\"Pizza Diavola\", 29, 2, 450)");
 
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
-                "(\"Eggs Benedict\", 24, 1, 450)");
+                "(\"Eggs Benedict\", 24, 1, 250)");
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
-                "(\"American Breakfast\", 25, 1, 450)");
+                "(\"American Breakfast\", 25, 1, 350)");
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
-                "(\"American Pancakes\", 17, 1, 450)");
+                "(\"American Pancakes\", 17, 1, 200)");
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
-                "(\"English Breakfast\", 28, 1, 450)");
+                "(\"English Breakfast\", 28, 1, 350)");
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
-                "(\"Sunny Side Up Eggs\", 14, 1, 450)");
+                "(\"Sunny Side Up Eggs\", 14, 1, 250)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Black Angus Burger\", 38, 3, 550)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"NY City Steak\",60, 3, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Hot Chicken Wings\", 32, 3, 400)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Chicken Strips\", 27, 3, 300)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Fish and Chips\", 36, 3, 400)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"French Fries\", 8, 4, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Mashed Potatoes\", 9, 4, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Green Salad\", 10, 4, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Onion Rings\", 9, 4, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Homemade Buns\", 5, 4, 100)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Grilled Cheese\", 19, 5, 350)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"BBQ Pulled Pork\", 25, 5, 350)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Turkey Club\", 24, 5, 350)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Tuna Fantasy\", 27, 5, 300)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Chicken and Bacon\", 24, 5, 300)");
+
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pasta Carbonara\", 28, 6, 300)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Spaghetti Bolognese\", 28, 6, 350)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pappardelle with Parmesan\", 30, 6, 300)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Fettuccine Alfredo\", 29, 6, 350)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Gnocchi with Pesto\", 27, 6, 350)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Special Cheesecake\", 17, 7, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Cherry Pie\", 28, 14, 200)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Chocolate Cake\", 15, 7, 180)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Caramel Cake\", 16, 7, 150)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Homemade Ice Cream\", 14, 7, 180)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Coke\", 6, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Diet Coke\", 6, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Sprite\", 6, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Fanta\", 6, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Lemonade\", 1, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Berry Lemonade\", 12, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Tonic Water\", 6, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Still Water\", 7, 8, 250)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Gas Water\", 6, 8, 250)");
 
 
         // CREATE ADDRESSES TABLE
