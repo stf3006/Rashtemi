@@ -58,6 +58,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // POPULATE MENU TABLE WITH DATA
         db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
                 "(\"Pizza Classic\", 28, 2, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pizza Quattro Formaggi\", 34, 2, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pizza Quattro Stagioni\", 27, 2, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pizza Primavera\", 30, 2, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Pizza Diavola\", 29, 2, 450)");
+
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Eggs Benedict\", 24, 1, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"American Breakfast\", 25, 1, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"American Pancakes\", 17, 1, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"English Breakfast\", 28, 1, 450)");
+        db.execSQL("INSERT INTO " + TABLE_MENU + " (name, price, category, weight) VALUES " +
+                "(\"Sunny Side Up Eggs\", 14, 1, 450)");
+
 
         // CREATE ADDRESSES TABLE
         db.execSQL("CREATE TABLE " + TABLE_ADDRESSES +
