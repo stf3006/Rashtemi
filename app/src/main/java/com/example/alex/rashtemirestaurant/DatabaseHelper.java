@@ -221,4 +221,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return products;
     }
+
+    public boolean login(String username, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_CLIENTS + " WHERE username='" + username + "' AND password='" + password + "'", null);
+        cursor.moveToFirst();
+
+        if(cursor.isAfterLast()) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

@@ -35,8 +35,19 @@ public class MyAccountActivity extends AppCompatActivity {
                 String s1 = ed1.getText().toString();
                 String s2 = ed2.getText().toString();
 
+                System.out.println("Username: " + s1);
+                System.out.println("Password: " + s2);
+
                 if(s1.equals("") || s1.equals("")){
                     Toast.makeText(getApplicationContext(),"Please, insert data!",Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                DatabaseHelper dbHelper = new DatabaseHelper(MyAccountActivity.this);
+                if(dbHelper.login(s1, s2)) {
+                    Toast.makeText(getApplicationContext(), "Login successfull!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Login failed!", Toast.LENGTH_SHORT).show();
                 }
 
             }
