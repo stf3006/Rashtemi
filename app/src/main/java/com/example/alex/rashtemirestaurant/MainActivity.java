@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -70,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final TitleView tv = (TitleView)findViewById(R.id.titleview_main);
+        tv.TriggerColorChange();
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                tv.TriggerColorChange();
+                handler.postDelayed(this, 500);
+            }
+        }, 500);
     }
 
 

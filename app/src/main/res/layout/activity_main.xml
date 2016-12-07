@@ -12,11 +12,16 @@
 
     android:orientation="vertical">
 
+        <com.example.alex.rashtemirestaurant.TitleView
+            android:id="@+id/titleview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/burger"
-        android:paddingBottom="50dp"
+        android:paddingBottom="25dp"
         android:paddingTop="25dp" />
 
 
@@ -24,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/menu_button_txt"
-        android:id="@+id/menu_button"/>
+        android:id="@+id/menu_button"
+        />
 
 
 
@@ -32,24 +38,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/book_button_txt"
-        android:id="@+id/book_button"/>
+        android:id="@+id/book_button"
+        />
 
     <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/contact_button_txt"
-    android:id="@+id/contact_button"/>
+    android:id="@+id/contact_button" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/myacc_button_text"
-        android:id="@+id/myacc_button"/>
+        android:id="@+id/myacc_button" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/download_menu_text"
-        android:id="@+id/download_menu_button"/>
+        android:id="@+id/download_menu_button" />
 
 </LinearLayout>

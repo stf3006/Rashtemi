@@ -46,6 +46,7 @@ public class MyAccountActivity extends AppCompatActivity {
                 DatabaseHelper dbHelper = new DatabaseHelper(MyAccountActivity.this);
                 if(dbHelper.login(s1, s2)) {
                     Toast.makeText(getApplicationContext(), "Login successfull!", Toast.LENGTH_SHORT).show();
+                    MyAccountActivity.this.finish();
                 } else {
                     Toast.makeText(getApplicationContext(), "Login failed!", Toast.LENGTH_SHORT).show();
                 }

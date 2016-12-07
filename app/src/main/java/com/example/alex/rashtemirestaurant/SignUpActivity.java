@@ -38,7 +38,15 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Passwords don't match!",Toast.LENGTH_LONG).show();
                 }
 
-
+                DatabaseHelper dbHelper = new DatabaseHelper(SignUpActivity.this);
+                if(dbHelper.signUp(s1, s2, s3, s4)) {
+                    Toast.makeText(SignUpActivity.this, "User created successfully!", Toast.LENGTH_LONG).show();
+                    SignUpActivity.this.finish();
+                } else {
+                    Toast.makeText(SignUpActivity.this, "Failed! User already exists.", Toast.LENGTH_SHORT).show();
+                }
+                
+                
             }
         });
 

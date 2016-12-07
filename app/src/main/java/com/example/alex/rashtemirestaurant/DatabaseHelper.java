@@ -28,7 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 " (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "name TEXT NOT NULL, " +
                 "phone TEXT NOT NULL, " +
-                "username TEXT NOT NULL, " +
+                "username TEXT UNIQUE NOT NULL, " +
                 "password TEXT NOT NULL)");
 
         // CREATE CATEGORIES TABLE
@@ -232,5 +232,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } else {
             return true;
         }
+    }
+
+    public boolean signUp(String name, String phone, String user, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            db.execSQL("INSERT INTO " + TABLE_CLIENTS + "(name, phone, username, password) VALUES ('" + name + "', '" + phone + "', '" + user + "', '" + password + "')");
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            return false;
+        }
+
+        return true;
     }
 }
