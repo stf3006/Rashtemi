@@ -33,6 +33,7 @@
     <string name="cart_product_name_text">Pizza</string>
     <string name="addBooking_button">BOOK</string>
     <string name="download_menu_text">Download menu</string>
+    <string name="place_order">Place order</string>
 
     <string-array name="number_of_guests">
         <item>1</item>
