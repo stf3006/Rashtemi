@@ -32,6 +32,7 @@
     <string name="Pick_time_text">Pick time</string>
     <string name="cart_product_name_text">Pizza</string>
     <string name="addBooking_button">BOOK</string>
+    <string name="download_menu_text">Download menu</string>
 
     <string-array name="number_of_guests">
         <item>1</item>

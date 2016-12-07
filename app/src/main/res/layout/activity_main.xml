@@ -46,4 +46,10 @@
         android:text="@string/myacc_button_text"
         android:id="@+id/myacc_button"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_menu_text"
+        android:id="@+id/download_menu_button"/>
+
 </LinearLayout>
