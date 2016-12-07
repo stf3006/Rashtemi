@@ -89,7 +89,7 @@ class DownloadTask extends AsyncTask<Void, Void, Void> {
             conn.setRequestMethod("GET");
             conn.setDoOutput(true);
             conn.connect();
-            String path = Environment.getExternalStorageDirectory().toString() + "/download/";
+            String path = Environment.getExternalStorageDirectory().getAbsolutePath().toString() + "/download/";
             File root = new File(path);
             FileOutputStream file = new FileOutputStream(new File(root, "menu.pdf"));
             InputStream stream = conn.getInputStream();

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -44,6 +45,7 @@ public class ProductsListAdapter extends ArrayAdapter<Product> {
             public void onClick(View v) {
                 CartHelper.addProduct(product);
                 System.out.println("ADAUG IN COS " + product.name);
+                Toast.makeText(getContext(), product.name + " added to cart.", Toast.LENGTH_SHORT).show();
 
             }
         });
